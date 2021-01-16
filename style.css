@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+	--nav-bg: #E0E1E9;
+	--primary-btn: #9b5de5;
+	--secondary-btn: #f15bb5;
+	--service-section: #54478c;
+	--footer: #240046;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+hr {
+	color: white;
+	margin: 1em
+}
+nav {
+	background: var(--nav-bg);
+	position: absolute;
+	width: 100%;
+	height: 0;
+	top: 0;
+}
+#myNav {
+
+	overflow-x: hidden;
+	transition: 1s;
+}
+nav ul{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10em
+}
+nav ul li {
+	padding: 10px;
+
+}
+nav .nav-left {
+	align-items: center;
+}
+nav .nav-left h1 {
+	display: none;
+}
+nav .nav-right {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+#openNav, #closeNav {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	display: block;
+	cursor: pointer;
+}
+button {
+	color: #fff;
+	border-radius:30px;
+	border: none;
+	margin: 5px;
+	cursor: pointer;
+	padding: 1em 2em
+}
+.primary-btn {
+	background-color: var(--primary-btn);
+}
+.secondary-btn {
+	background-color: var(--secondary-btn);
+}
+.header {
+	display: block;
+	margin: 20px;
+}
+.head1 {
+	flex: 1.5;
+	margin-bottom: 50px;
+}
+.head2 {
+	flex: 1;
+	margin: 30px 20px;
+}
+.head2 h2 {
+	color: #073b4c;
+	font-size: 30px
+}
+.head2 h3 {
+	color: #118ab2;
+}
+.head2 p {
+	margin: 10px 0;
+	font-size: 15px
+}
+
+/*Section 2*/
+.services {
+	background-color: var(--service-section);
+	color: #fff;
+	text-align: center;
+	padding: 20px
+}
+.service img {
+	width: 30%;
+	padding:20px
+}
+.service div {
+	margin: 30px 0;
+}
+
+/*Section 3*/
+.newslatter {
+	margin-bottom:  20px;
+	text-align: center;
+}
+.newslatter h2 {
+	padding: 20px;
+}
+.newslatter input[type=text] {
+
+}
+.newslatter button{
+	border: none;
+	background-color: var(--secondary-btn);
+	border-radius: 0;
+	padding: 9px;
+	color: #fff;
+}
+
+/*Footer*/
+footer {
+	background-color: var(--footer);
+	color: #fff;
+	font-size: 14px;
+	padding: 50px 10px
+}
+.footer{
+	display: flex;
+
+}
+footer a {
+	color: #fff;
+}
+footer .contact .flex {
+	display: flex;
+	align-items: center;
+}
+footer .contact img {
+	width: 30px;
+	padding: 10px;
+}
+footer .about {
+	padding-left: 2em;
+}
+footer .sosmed {
+	display: flex;
+	justify-content: space-around;
+}
+footer .sosmed img {
+	margin-top: 2em; 
+	margin-bottom: 2em;
+	width: 30px;
+}
+footer .copyright {
+	text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+nav {
+	position: relative;
+	background: var(--nav-bg);
+	height: 100%;
+}
+nav ul{
+	display: flex;
+	padding: 0 5em;
+}
+nav ul{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	margin: 0;
+}
+nav ul li {
+	padding: 10px;
+}
+nav .nav-left {
+	align-items: center;
+}
+nav .nav-left h1 {
+	display: inline;
+}
+nav .nav-right {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+#openNav, #closeNav {
+	display: none;
+
+}
+
+.header {
+	display: flex;
+}
+footer {
+	font-size: 15px;
+	padding: 50px
+}
+footer .footer {
+	margin: 0 5em
+}
+.footer .about {
+	padding-left: 10em
+}
+.service {
+	display: flex;
+	text-align: center;
+}
+.service p {
+padding: 20px;	
+}
+
+
+
+
+}
